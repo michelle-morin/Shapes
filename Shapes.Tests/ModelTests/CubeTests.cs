@@ -13,8 +13,10 @@ namespace Shapes.Tests
       // Arrange
       Rectangle newRectangle = new Rectangle(4, 4);
       Cube newCube = new Cube(newRectangle);
+
       // Act
       int result = newCube.GetVolume();
+
       // Assert
       Assert.AreEqual(result, 64);
     }
@@ -25,8 +27,10 @@ namespace Shapes.Tests
       // Arrange
       Rectangle newRectangle = new Rectangle(4, 4);
       Cube newCube = new Cube(newRectangle);
+
       // Act
       int result = newCube.GetSurfaceArea();
+      
       // Assert
       Assert.AreEqual(result, 96);
     }
